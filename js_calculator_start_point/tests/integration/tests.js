@@ -80,7 +80,7 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('1252')
   })
 
-  it('should have a output not a number', function(){
+  it('should not be able to divide by 0', function(){
     running_total = element(by.css('#running_total'))
     element(by.css('#number8')).click();
     element(by.css('#operator_divide')).click();
